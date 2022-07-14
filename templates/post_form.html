@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Добавить пост</title>
-    <link rel="stylesheet" href="../static/style.css">
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block title %}Добавить пост{% endblock %}
+
+{% block link %}<link rel="stylesheet" href="../static/style.css">{% endblock %}
+
+{% block body %}
 <main>
 
     <a href="index.html" class="link">Назад</a>
@@ -29,5 +28,4 @@
 
 
 </main>
-</body>
-</html>
+{% endblock %}

@@ -1,5 +1,4 @@
-from flask import Flask, request, render_template, send_from_directory
-# from functions import ...
+from flask import Flask, render_template, url_for
 
 POST_PATH = "posts.json"
 UPLOAD_FOLDER = "uploads/images"
@@ -9,7 +8,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def page_index():
-    pass
+    return render_template("index.html")
 
 
 @app.route("/list")

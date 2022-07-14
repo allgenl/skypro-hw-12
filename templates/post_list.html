@@ -1,11 +1,10 @@
-<!DOCTYPE html>
-<html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <title>Все посты найденные по запросу "Кот и Хлеб"</title>
-    <link rel="stylesheet" href="../static/style.css">
-</head>
-<body>
+{% extends 'base.html' %}
+
+{% block title %}Все посты найденные по запросу "Кот и Хлеб"{% endblock %}
+
+{% block link %}<link rel="stylesheet" href="../static/style.css">{% endblock %}
+
+{% block body %}
 <main>
 
     <a href="index.html" class="link">Назад</a>
@@ -26,5 +25,4 @@
     <a href="post_form.html" class="button">Добавить пост</a>
 
 </main>
-</body>
-</html>
+{% endblock %}
